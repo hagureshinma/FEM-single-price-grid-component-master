@@ -6,52 +6,49 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css"> 
   
   <title>Frontend Mentor | Single Price Grid Component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-    body{
-      font-family: 'Karla', sans-serif;
-    }
-  </style>
 </head>
 <body>
   <main class="main-container">
 
-    <h1 class="hidden-element">Single price grid component example</h1>
+    <h1 class="screen-reader-only">Single price grid component example</h1>
 
-    <article>
+    <article class="component-wrapper">
 
-      <header>
-        <h2>
-          Join our community
-        </h2>
-      
-        <h3>
-          30-day, hassle-free money back guarantee
-        </h3>
+      <h2 class="screen-reader-only">Component example</h2>
+
+      <section class="component-section">
+
+          <h2 class="component-section__h2">Join our community</h2>
         
-        <p>
-          Gain access to our full library of tutorials along with expert code reviews. 
-          Perfect for any developers who are serious about honing their skills.
-        </p>
-      </header>
-    
-      <section>
-        <h3>Monthly Subscription</h3>
-      
-        &dollar;29 per month
-      
-        Full access for less than &dollar;1 a day
-      
-        <button>Sign Up</button>
+          <h3 class="component-section__h3 component-section__h3--bright">
+            30-day, hassle-free money back guarantee
+          </h3>
+          
+          <p class="component-section__p">
+            Gain access to our full library of tutorials along with expert code reviews. 
+            Perfect for any developers who are serious about honing their skills.
+          </p>
       </section>
     
-      <section>
+      <section class="component-section component-section--bgcyan">
+
+        <h3>Monthly Subscription</h3>
+      
+        <p>
+          &dollar;29 per month
+          Full access for less than &dollar;1 a day
+        </p>
+      
+        <button>Sign Up</button>
+
+      </section>
+    
+      <section class="component-section component-section--bgyellow">
         <h3>Why Us</h3>
       
         <p>

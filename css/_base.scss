@@ -1,0 +1,78 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  a {
+    color: var(--color-cyan);
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 1.5rem;
+  min-height: 100vh;
+  font-family: "Karla", sans-serif;
+  background: var(--color-light-gray);
+}
+
+.component-wrapper{
+  // display: grid;
+  // padding: 1rem;
+  border-radius: .4rem;
+  background: var(--color-light);
+}
+
+.component-section{
+  padding: 1rem;
+  color: var(--color-light);
+}
+
+.component-section--bgcyan{
+  background: var(--color-cyan);
+}
+
+.component-section--bgyellow{
+  background: var(--color-lighter-cyan);
+}
+// .component-section--bgyellow{ button
+//   background: var(--color-bright-yellow);
+// }
+
+.component-section__h2{
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--color-cyan);
+}
+
+.component-section__h3{
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-light);
+}
+
+.component-section__p{
+  font-size: .9rem;
+  line-height: 1.8;
+  color: var(--color-grayish-blue);
+}
+
+.component-section__h3--bright{
+  color: var(--color-bright-yellow);
+}
+
+// Grace's visually hidden helper
+.screen-reader-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
