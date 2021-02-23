@@ -25,7 +25,7 @@ body {
 }
 
 .component-section{
-  padding: 1rem;
+  padding: 1rem 1.5rem;
   color: var(--color-light);
 }
 
@@ -33,7 +33,7 @@ body {
   background: var(--color-cyan);
 }
 
-.component-section--bgyellow{
+.component-section--bglc{
   background: var(--color-lighter-cyan);
 }
 // .component-section--bgyellow{ button
@@ -47,19 +47,50 @@ body {
 }
 
 .component-section__h3{
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 700;
   color: var(--color-light);
 }
 
+.component-section__h3--small{
+  font-size: .92rem;
+}
+
 .component-section__p{
-  font-size: .9rem;
+  font-size: .85rem;
   line-height: 1.8;
+  font-weight: 400;
+}
+
+.component-section__p--dark{
   color: var(--color-grayish-blue);
+}
+
+.component-section__p--biggest{
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.component-section__p--lighter{
+ color: var(--color-lightest-cyan);
 }
 
 .component-section__h3--bright{
   color: var(--color-bright-yellow);
+}
+
+.button{
+  display: block;
+  margin: auto;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: .9em 6.3em;
+  border: none;
+  border-radius: .3rem;
+  background: var(--color-bright-yellow);
+  color: var(--color-light);
+  box-shadow: 1px 1px 10px rgba(26, 26, 26, 0.3);
 }
 
 // Grace's visually hidden helper
