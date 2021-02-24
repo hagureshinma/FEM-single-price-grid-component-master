@@ -1,0 +1,12 @@
+@media (min-width: 570px){
+   
+    .component-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .component-section--grid-top{
+        grid-column: 1 / end;
+    }
+
+}

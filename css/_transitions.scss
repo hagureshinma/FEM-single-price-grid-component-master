@@ -1,20 +1,18 @@
 .button:hover,
 .button:focus{
 
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   outline: 2px solid green;
   outline-offset: -.4rem;
   color: green;
 
   &::before{
     left: 0;
-    // transition-delay: 1s; 
     transition: 100ms left 100ms linear;
   }
 
   &::after{
     right: 0;
-    // transition-delay: 2s; 
     transition: 100ms right 100ms linear;
   }
 
