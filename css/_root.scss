@@ -1,8 +1,9 @@
 :root{
+    //colors
     // primary
     --color-cyan: hsl(179, 62%, 43%);
     --color-lighter-cyan: hsl(179, 47%, 52%);
-    --color-lightest-cyan: hsl(179, 56%, 59%);
+    --color-lightest-cyan: hsl(179, 56%, 65%);
     --color-bright-yellow: hsl(71, 73%, 54%);
 
     // neutral
@@ -10,4 +11,7 @@
     --color-grayish-blue: hsl(218, 22%, 67%);
 
     --color-light: hsl(0, 0%, 100%);
+
+    //sizes
+    --main-font-size: .85rem; 
 }

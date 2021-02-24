@@ -1,0 +1,22 @@
+.button:hover,
+.button:focus{
+
+  font-size: 1.2rem;
+  outline: 2px solid green;
+  outline-offset: -.4rem;
+  color: green;
+
+  &::before{
+    left: 0;
+    // transition-delay: 1s; 
+    transition: 100ms left 100ms linear;
+  }
+
+  &::after{
+    right: 0;
+    // transition-delay: 2s; 
+    transition: 100ms right 100ms linear;
+  }
+
+  transition: font-size 100ms ease, outline 10ms linear, outline-offset 100ms ease, color 250ms ease-in;
+}

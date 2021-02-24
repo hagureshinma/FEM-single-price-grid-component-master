@@ -57,7 +57,7 @@ body {
 }
 
 .component-section__p{
-  font-size: .85rem;
+  font-size: var(--main-font-size);
   line-height: 1.8;
   font-weight: 400;
 }
@@ -73,7 +73,18 @@ body {
 
 .component-section__p--lighter{
  color: var(--color-lightest-cyan);
+ padding: 1em;
 }
+
+.ul{
+  list-style: none;
+  padding: 0;
+  font-size: var(--main-font-size);
+ }
+
+ .ul__li{
+   margin-bottom: .5em;
+ }
 
 .component-section__h3--bright{
   color: var(--color-bright-yellow);
@@ -81,16 +92,50 @@ body {
 
 .button{
   display: block;
+  position: relative;
   margin: auto;
   font-family: inherit;
   font-size: 1rem;
   font-weight: 700;
-  padding: .9em 6.3em;
+  padding: .9em 4em;
   border: none;
   border-radius: .3rem;
   background: var(--color-bright-yellow);
   color: var(--color-light);
   box-shadow: 1px 1px 10px rgba(26, 26, 26, 0.3);
+  width: 100%;
+  outline: 1px solid transparent;
+  outline-offset: -1em;
+  overflow: hidden;
+}
+
+.button__text{
+  position: relative;
+  z-index: 2;
+}
+
+.button::before{
+  content: "";
+  position: absolute;
+  left: -50%;
+  top: 45%;
+  width: 30%;
+  height: 10%;
+  z-index: 1;
+  background: green;
+  border-radius: 0 5px 0 0;
+}
+
+.button::after{
+  content: "";
+  position: absolute;
+  right: -50%;
+  top: 45%;
+  width: 30%;
+  height: 10%;
+  z-index: 1;
+  background: green;
+  border-radius: 5px 0 0 0;
 }
 
 // Grace's visually hidden helper
